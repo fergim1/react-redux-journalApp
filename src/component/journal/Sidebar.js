@@ -1,11 +1,19 @@
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { startLogOut } from '../../actions/auth'
 import { JournalEntries } from './JournalEntries'
 
 export const Sidebar = () => {
 
     const dispatch = useDispatch()
+    
+    const state = useSelector(state => state)
+    const { name } = state.auth
+    // lo dejo asi para que se entienda lo del state
+    // Mas corto se podria hacer:
+    // const { name } = useSelector( state => state.auth)
+
+
 
     const handleLogOut = () => {
         console.log('click')
@@ -19,7 +27,7 @@ export const Sidebar = () => {
             <div className="journal__sidebar-navbar">
                 <h3 className="mt-5">
                     <i className="far fa-moon"></i>
-                    <span> Fernando</span>
+                    <span> { name }</span>
                 </h3>
 
                 <button 

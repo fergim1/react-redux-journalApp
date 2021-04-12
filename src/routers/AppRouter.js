@@ -32,7 +32,7 @@ export const AppRouter = () => {
 
     if ( cheking ) {
         return(
-            <h1> Espere... </h1>
+            <h1> Please wait... </h1>
         )         
     }
     // el cheking lo pongo porque apenas se reenderiza, no va a hacer el useEffect , por lo tanto no voy a saber 
