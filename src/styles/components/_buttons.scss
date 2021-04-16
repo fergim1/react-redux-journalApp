@@ -18,6 +18,16 @@
     }
     
 }
+.btn-danger {
+    background-color: red;
+    border: none;
+
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: darken($color: red, $amount: 20);
+    }
+}
 
 
 .btn-primary {

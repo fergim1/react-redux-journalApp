@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import validator  from "validator";
-// import Swal from 'sweetalert2'
 import { startGoogleLogin } from '../../actions/auth'
 import { useForm } from '../../hooks/useForm'
 import { startLoginEmailPassword } from '../../actions/auth'
@@ -58,7 +57,9 @@ export const LoginScreen = () => {
     }
 
     return (
-        <>
+        <div
+            className='animate__animated animate__fadeIn animate__faster'
+        >
             <h3 className='auth__title'>Login</h3>
             <form onSubmit= { handleSubmitLogin }>
                 {
@@ -118,6 +119,6 @@ export const LoginScreen = () => {
                     Create new Account
                 </Link>
             </form>
-        </>
+        </div>
     )
 }
