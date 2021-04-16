@@ -26,8 +26,9 @@ export const NotesAppBar = () => {
 
     return (
         <div className="notes__appbar">
-            <span>{ noteDate.format("dddd, MMMM Do YYYY, h:mm a")}</span>
-
+            <i class="far fa-calendar-alt">
+            <span>  { noteDate.format("dddd, MMMM Do YYYY, h:mm a")}</span>
+            </i>
             <input
                 type='file'
                 style={{ display: 'none '}}

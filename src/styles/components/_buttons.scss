@@ -29,6 +29,13 @@
     }
 }
 
+.btn-logout:hover {    
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
 
 .btn-primary {
     background-color: $primary;

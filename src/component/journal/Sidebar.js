@@ -29,12 +29,12 @@ export const Sidebar = () => {
             
             <div className="journal__sidebar-navbar">
                 <h3 className="mt-5">
-                    <i className="far fa-moon"></i>
-                    <span> { name }</span>
+                    <i className="fas fa-user"></i>
+                    <span>  { name }</span>
                 </h3>
 
                 <button 
-                    className="btn"
+                    className="btn btn-logout"
                     onClick= { handleLogOut }
                 >
                     Logout
@@ -45,7 +45,7 @@ export const Sidebar = () => {
                 className="journal__new-entry"
                 onClick= { handleNewNote}
             >
-                <i className="far fa-calendar-plus fa-5x"></i>
+                <i className="far fa-calendar-plus fa-3x"></i>
                 <p className="mt-5">
                     New note
                 </p>
