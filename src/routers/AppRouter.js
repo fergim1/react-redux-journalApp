@@ -9,6 +9,7 @@ import { PublicRoutes } from './PublicRoutes';
 import { PrivateRoute } from './PrivateRoutes';
 import { loadNotes } from '../actions/notes';
 
+
 export const AppRouter = () => {
     
     const dispatch = useDispatch()
@@ -40,7 +41,7 @@ export const AppRouter = () => {
         )         
     }
     // el cheking lo pongo porque apenas se reenderiza, no va a hacer el useEffect , por lo tanto no voy a saber 
-    // si esta autenticado o no. Entonces, primero que espere la app con ese "Espere..." y luego cuando 
+    // si esta autenticado o no. Entonces, primero que espere la app con ese "Please wait..." y luego cuando 
     // corrobora si esta o no authenticado decide que mostrar 
 
     return (
